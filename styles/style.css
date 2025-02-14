@@ -1,0 +1,127 @@
+/* Importar Bootstrap desde CDN */
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css');
+
+/* Estilos generales */
+body {
+    font-family: 'Telegraf';    
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(34, 69, 65, 0.7)), 
+                url('1.jpg'); 
+    background-attachment: fixed; /* Mantiene la imagen fija */
+    height: 100vh; /* Cubre toda la pantalla */
+    background-size: 100% 100% ;
+    
+}
+
+
+
+@font-face {
+    font-family: 'Telegraf';
+    src: url('../Fonts/PPTelegraf-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* @font-face {
+    font-family: 'Telegraf';
+    src: url('../Fonts/PPTelegraf-UltraBold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+
+
+/* Contenedor del formulario */
+.container {
+    
+    background: rgba(255, 255, 255, 0.555); /* Fondo blanco con un poco de transparencia */
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Más profundidad en la sombra */
+    max-width: 700px;
+    backdrop-filter: blur(10px); /* Agrega un efecto de desenfoque */
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+}
+
+
+
+
+/* Títulos de cada sección */
+h2 {
+    text-align: center;
+    font-weight: bold;
+    color: #007bffc4;
+    margin-bottom: 20px;
+}
+
+h4 {
+    border-bottom: 2px solid #007bff86;
+    font-size:large;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    color: #007bff;
+    font-weight: bold;
+    
+}
+
+/* Estilo de los select */
+.form-select {
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.397);
+}
+
+/* Estilo de los textareas */
+textarea {
+    resize: none;
+    padding: 10px;
+}
+
+/* Botón de enviar */
+.btn-primary {
+    width: 25%;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.form-control{
+
+    background: rgba(255, 255, 255, 0.397);
+    border-radius: 10px;
+}
+/* Hover del botón */
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+    .btn-primary {
+        font-size: 16px;
+    }
+}
