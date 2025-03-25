@@ -16,44 +16,46 @@
     <div class="container my-5 text-center">
         <h2 class="mb-4">Encuesta de Satisfacción</h2>
 
-        <form class="text-start mx-auto" style="max-width: 600px;">
+        <form id="form" class="text-start mx-auto" style="max-width: 600px;">
 
             <!-- Sección: Satisfacción General -->
             <h4 class="text-primary">Satisfacción General</h4>
             
             <div class="mb-3">
-                <label class="form-label">¿Qué tan satisfecho/a estás con el servicio contratado?</label>
-                <select class="form-select">
-                    <option selected>Selecciona una opción</option>
-                    <option>Muy insatisfecho</option>
-                    <option>Insatisfecho</option>
-                    <option>Neutral</option>
-                    <option>Satisfecho</option>
-                    <option>Muy satisfecho</option>
+                <label class="form-label">¿Qué tan satisfecho/a estás con el servicio contratado?*</label>
+                <select class="form-select" id="satisfaccion_servicio" name="satisfaccion_servicio">
+                    <option selected value="">Selecciona una opción</option>
+                    <option value="Muy insatisfecho">Muy insatisfecho</option>
+                    <option value="Insatisfecho">Insatisfecho</option>
+                    <option value="Neutral">Neutral</option>
+                    <option value="Satisfecho">Satisfecho</option>
+                    <option value="Muy satisfecho">Muy satisfecho</option>
                 </select>
             </div>
 
             <div class="mb-3">
-                <label class="form-label">¿Qué tan satisfecho estás con la calidad de las tareas realizadas por el agente?</label>
-                <select class="form-select">
-                    <option selected>Selecciona una opción</option>
-                    <option>Muy insatisfecho</option>
-                    <option>Insatisfecho</option>
-                    <option>Neutral</option>
-                    <option>Satisfecho</option>
-                    <option>Muy satisfecho</option>
+                <label class="form-label">¿Qué tan satisfecho estás con la calidad de las tareas realizadas por el agente?*</label>
+                <select class="form-select" id="satisfaccion_tareas_agente" name="satisfaccion_tareas_agente">
+                    <option selected value="">Selecciona una opción</option>
+                    <option value="Muy insatisfecho">Muy insatisfecho</option>
+                    <option value="Insatisfecho">Insatisfecho</option>
+                    <option value="Neutral">Neutral</option>
+                    <option value="Satisfecho">Satisfecho</option>
+                    <option value="Muy satisfecho">Muy satisfecho</option>
+
                 </select>
             </div>
 
             <div class="mb-3">
-                <label class="form-label">¿Qué tan satisfecho estás con la comunicación con tu agente?</label>
-                <select class="form-select">
-                    <option selected>Selecciona una opción</option>
-                    <option>Muy insatisfecho</option>
-                    <option>Insatisfecho</option>
-                    <option>Neutral</option>
-                    <option>Satisfecho</option>
-                    <option>Muy satisfecho</option>
+                <label class="form-label">¿Qué tan satisfecho estás con la comunicación con tu agente?*</label>
+                <select class="form-select" id="satisfaccion_comunicacion" name="satisfaccion_comunicacion">
+                    <option selected value="">Selecciona una opción</option>
+                    <option value="Muy insatisfecho">Muy insatisfecho</option>
+                    <option value="Insatisfecho">Insatisfecho</option>
+                    <option value="Neutral">Neutral</option>
+                    <option value="Satisfecho">Satisfecho</option>
+                    <option value="Muy satisfecho">Muy satisfecho</option>
+
                 </select>
             </div>
 
@@ -61,24 +63,26 @@
             <h4 class="text-primary mt-4">Esfuerzo Percibido (CES - Customer Effort Score)</h4>
 
             <div class="mb-3">
-                <label class="form-label">¿La respuesta a solicitudes o fallas escaladas fue oportuna y clara?</label>
-                <select class="form-select">
-                    <option selected>Selecciona una opción</option>
-                    <option>Sí</option>
-                    <option>No</option>
-                    <option>A veces</option>
+                <label class="form-label">¿La respuesta a solicitudes o fallas escaladas fue oportuna y clara?*</label>
+                <select class="form-select" id="respuesta_fallas" name="respuesta_fallas">
+                    <option selected value="">Selecciona una opción</option>
+                    <option value="Sí">Sí</option>
+                    <option value="No">No</option>
+                    <option value="A veces">A veces</option>
+
                 </select>
             </div>
 
             <div class="mb-3">
-                <label class="form-label">¿Qué tan fácil o difícil ha sido trabajar con tu agente?</label>
-                <select class="form-select">
-                    <option selected>Selecciona una opción</option>
-                    <option>Muy fácil</option>
-                    <option>Fácil</option>
-                    <option>Neutral</option>
-                    <option>Difícil</option>
-                    <option>Muy difícil</option>
+                <label class="form-label">¿Qué tan fácil o difícil ha sido trabajar con tu agente?*</label>
+                <select class="form-select" id="dificultad_agente" name="dificultad_agente">
+                    <option selected value="">Selecciona una opción</option>
+                    <option value="Muy fácil">Muy fácil</option>
+                    <option value="Fácil">Fácil</option>
+                    <option value="Neutral">Neutral</option>
+                    <option value="Difícil">Difícil</option>
+                    <option value="Muy difícil">Muy difícil</option>
+
                 </select>
             </div>
 
@@ -86,52 +90,69 @@
             <h4 class="text-primary mt-4">NPS (Net Promoter Score)</h4>
 
             <div class="mb-3">
-                <label class="form-label">En una escala de 1 a 10, ¿qué tan probable es que recomiendes este servicio?</label>
-                <select class="form-select">
-                    <option selected>Selecciona una opción</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option>6</option>
-                    <option>7</option>
-                    <option>8</option>
-                    <option>9</option>
-                    <option>10</option>
+                <label class="form-label">En una escala de 1 a 10, ¿qué tan probable es que recomiendes este servicio?*</label>
+                <select class="form-select" id="recomendar_servicio" name="recomendar_servicio">
+                    <option selected value="">Selecciona una opción</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    
                 </select>
             </div>
 
             <div class="mb-3">
-                <label class="form-label">¿Has notado incremento en tu productividad o crecimiento de tu negocio con el servicio?</label>
-                <select class="form-select">
-                    <option selected>Selecciona una opción</option>
-                    <option>Sí</option>
-                    <option>No</option>
-                    <option>Tal vez</option>
+                <label class="form-label">¿Has notado incremento en tu productividad o crecimiento de tu negocio con el servicio?*</label>
+                
+                <select class="form-select" id="resultado_servicio" name="resultado_servicio">
+                    
+                    <option selected value="">Selecciona una opción</option>
+                    <option value="Sí">Sí</option>
+                    <option value="No">No</option>
+                    <option value="Tal vez">Tal vez</option>
+
                 </select>
+                
             </div>
 
             <!-- Sección: Sugerencias y Oportunidades -->
             <h4 class="text-primary mt-4">Sugerencias y Oportunidades</h4>
 
             <div class="mb-3">
-                <label class="form-label">¿Qué aspectos considera que se podrían mejorar? ¡Vamos a hacerlo mejor!</label>
-                <textarea class="form-control" rows="3"></textarea>
+                <label class="form-label">¿Qué aspectos considera que se podrían mejorar? ¡Vamos a hacerlo mejor!*</label>
+                <textarea class="form-control" rows="3" id="aspectos_mejora" name="aspectos_mejora"></textarea>
             </div>
 
             <div class="mb-3">
-                <label class="form-label">Nos alegra que nos dejes tus comentarios sobre ¿Qué aspectos te han gustado más?</label>
-                <textarea class="form-control" rows="3"></textarea>
+                <label class="form-label">Nos alegra que nos dejes tus comentarios sobre ¿Qué aspectos te han gustado más?*</label>
+                <textarea class="form-control" rows="3" id="description" name="description"  ></textarea>
             </div>
 
+
+
+            
             <div class="text-center">
-                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="button" id="submit" class="btn btn-primary">Enviar</button>
             </div>
+
+
+            
 
         </form>
+        
+
+
+        
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>
